@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe_Page_Responsive</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <style>
+        body{
+            font-family: 'Times New Roman', Times, serif;
+            font-size:small;
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color:rgb(225, 208, 192);
+        }
+        .card{
+            background-color: white;
+            max-width: 500px; 
+            width: 100%;       
+            height: auto;
+            margin: 20px;
+            border-radius: 10px;
+            
+        }
+        .card h1{
+             font-family: "IBM Plex Serif", serif;
+             font-size: 30px;
+             line-height: 30px;
+            
+        }
+        .image img{
+            height:200px ;
+            width:100% ;
+            border-radius: 15px;    
+        }
+        .plan{
+            background-origin: padding-box;
+            background-color:#f8f0f3;
+            border-radius: 10px;
+            padding: 1px;
+            line-height: 0px;     
+        }
+        .plan li::marker{
+            color: rgb(113, 4, 73);
+        }
+        .plan ul{
+            padding-left:30px;
+        }
+        .plan li{
+            line-height: 20px;
+            padding-top: 5px;
+        }
+        .plan>h4{
+            padding-left: 20px;
+            color: rgb(96, 3, 62);
+        }
+        .card h3{
+            color: rgb(130, 14, 14);
+            font-size:20px;
+        }
+        .card li::marker{
+             color: rgb(113, 4, 73);
+        }
+        .card li{
+            line-height: 20px;
+            padding-top: 5px;
+        }
+        
+        table{
+            
+            width: 100%;
+            border-collapse: collapse;               
+        }
+        td:last-child {
+            color: brown;
+            font-weight: bold;     
+        }
+        td{
+            border-bottom: 1px solid grey;
+        }
+        tr:last-child td{
+            border-bottom: none;    
+        }
+        tr,td{
+             padding: 10px;
+        }
+        #ing ul{
+            padding-left: 15px;   
+        }
+        #ing li{
+            padding-left: 11px;
+        }
+        #ing li::marker{
+            color:  rgb(130, 14, 14);
+        }
+        #ins ol{
+            padding-left: 15px;
+        }
+        #ins li{
+            padding-left: 11px;
+        }
+        #ins li::marker{
+            color: rgb(130, 14, 14) ;    
+        }
+        @media (max-width: 600px)
+        {
+
+               body {
+                   padding: 10px;
+                   justify-content: flex-start; /* so content does not shrink center */
+               }
+           
+               .card {
+                   padding: 10px;
+                   border-width: 10px;
+               }
+           
+               h1 {
+                   font-size: 24px;
+               }
+           
+               p, li, td {
+                   font-size: 14px;
+                   line-height: 20px;
+               }
+        }
+
+    </style>
+</head>
+<body>  
+    <div class="card">
+        <div class="image" class="image"><img src="./image-omelette.jpeg" alt="omelette" > </div>
+          <h1>Simple Omelette Recipe</h1>
+          <p>An easy and quick dish,perfect for any meal.This classic omelette combines beaten eggs cooked to perfection,optionally filled with your choice of cheese,vegetables,or meats.</p>
+            <div class="plan">
+              <h4>Preparation time</h4>
+              <ul>
+                  <li><b>Total</b>:Approximately 10 minutes</li>
+                  <li><b>Preparation</b>:5 minutes</li>
+                  <li><b>Cooking</b>:5 minutes</li>
+              </ul>
+            </div>
+            <div id="ing"><h3>Ingredients</h3>
+                <ul >
+                    <li>2-3 large eggs</li>
+                    <li>Salt,to taste</li>
+                    <li>Pepper,to taste</li>
+                    <li>1 tablespoon of butter or oil</li>
+                    <li>Optional fillings:cheese,diced vegetables,cooked meats,herbs</li>
+                </ul>
+            </div>
+        <hr>
+        
+            <div id="ins"><h3>Instructions</h3>
+              <ol>
+                    <li><b>Beat the eggs</b>:In a bowl,beat the eggs with a pinch of salt and pepper until they are well mixed. You can add a tablespoon of water or milk for a fluffier texture</li>
+                    <li><b>Heat the pan</b>:Place a non-stick frying pan over mediun heat  and add butter or oil. </li>
+                    <li><b>Cook the omelette</b>:Once the butter is melted and bubbling ,pour in the eggs.Tilt the pan to ensure the eggs evenly coat the surface.</li>
+                    <li><b>Add fillings(optional)</b>:When the eggs begin to set at the edges but are still slightly runny in the middle,sprinkle you chosen fillings over one half of the omelette.</li>
+                    <li><b>Fold and serve</b>:As the omellete continues to cook,carefully lift one edge and fold it over the fillings.Let it cook for another minute,then slide it onto a plate.</li>
+                    <li><b>Enjo</b>:Serve hot,with additional salt and pepper if needed.</li>
+              </ol>
+            </div>
+        <hr>
+        <h3>Nutrition</h3>
+        <p>The table below shows nutritional values per servong without the additional fillings</p>
+        <table>
+            <tr>
+                <td>Calories</td>
+                <td>277kcal</td>
+            </tr>
+            <tr>
+                <td>Carbs</td>
+                <td>0g</td>
+            </tr>
+            <tr>
+                <td>Protein</td>
+                <td>30g</td>
+            </tr>
+            <tr>
+                <td>Fat</td>
+                <td>22g</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
