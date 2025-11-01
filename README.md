@@ -9,7 +9,7 @@ This is my solution to the "Recipe page" challenge.
 - Flexbox for layout
 
 ## How to run
-Open `Recipe_page_Responsive.html` in your browser.
+Open `index.html` in your browser.
 
 ## Notes
 Responsive layout with media queries and accessible semantic structure.
