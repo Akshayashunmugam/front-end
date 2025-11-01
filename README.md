@@ -4,7 +4,7 @@ This is my solution to the "Recipe page" challenge.
 
 ## Built with
 - HTML (semantic)
-- CSS (custom styles, responsive media queries)
+- CSS (custom styles)
 - Google Fonts (IBM Plex Serif)
 - Flexbox for layout
 
@@ -12,4 +12,4 @@ This is my solution to the "Recipe page" challenge.
 Open `index.html` in your browser.
 
 ## Notes
-Responsive layout with media queries and accessible semantic structure.
+i have developed for the webpage i need to make this responsive in future after learning it ..
